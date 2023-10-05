@@ -6,12 +6,22 @@ public class Article {
     private String content;
     private int hit;
     private String regDate;
-    public Article(int id, String title, String content, String regDate) {
+    private int userId;
+    public Article(int id, String title, String content, String regDate, int userId) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.regDate = regDate;
+        this.userId = userId;
         this.hit = 0;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public int getId() {
